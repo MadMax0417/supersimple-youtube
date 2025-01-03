@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8 exams</title>
+    <style>
+        button {
+            cursor: pointer;
+
+        }
+
+        .block {
+            display: block;
+        }
+
+        .signup-form {
+            /* border: 1px solid grey; */
+            /* padding-right: 300px; */
+            width: 350px;
+            padding: 10px;
+        }
+
+        .input {
+            border-radius: 10px;
+            border-style: solid;
+            border-width: 1px;            
+        }
+
+        .name {
+            padding: 8px 20px 8px 5px;
+            margin-bottom: 10px;
+            margin-right: 5px;
+        }
+        
+        .email {
+            padding: 8px 196px 8px 5px;
+            margin-bottom: 10px;
+        }
+        
+        .blue-btn {
+            background-color: rgb(13, 97, 231);
+            color: white;
+            border-radius: 10px;
+            width: 350px;
+            padding : 10px 50px;
+            font-size: 18px;
+            box-sizing: border-box;
+        }
+
+       
+
+        .title {
+            font-family: Arial;
+            font-weight: 900;
+            font-size: 30px;
+        }
+
+        .uber-input {
+            font-size: 18px;
+            background-color: rgba(247, 242, 242, 0.966);
+            border-style: none;
+            border-radius: 2px;
+            margin:5px;
+            padding : 10px 200px 10px 10px;
+        }
+        
+        
+        .uber-btn {
+            font-size: 18px;
+            margin-top: 25px;
+            padding: 15px 20px;
+            border-style: none;
+        }
+
+        .black-btn {
+            color: white;
+            background-color: black;
+        }
+
+        .grey-btn {
+            margin-left : 10px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="signup-form">
+
+        <input type="text" placeholder="First Name" class = "input name">
+
+        <input type="text" placeholder="Last Name" class = "input name">
+
+        <input type="email" placeholder="Email" class="block input email">
+
+        <button class="blue-btn">Sign Up</button>
+
+    </div>
+
+
+    <div class="uber">
+        <p class="title">
+            Request a ride now
+        </p>
+
+        <input type="text" placeholder="Enter pickup location" class="uber-input block">
+
+        <input type="text" placeholder="Enter destination" class="uber-input block">
+
+
+        <button class="black-btn uber-btn">
+            Request now
+        </button>
+
+        <button class="grey-btn uber-btn">
+            Schedule for later
+        </button>
+
+
+
+
+
+    </div>
+    
+</body>
+</html>

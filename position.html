@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position practice</title>
+</head>
+<body style="
+    height:3000px;
+    padding-top:60px;
+    padding-left: 70px;
+">
+
+    <!--
+    it is better to keep space at the top of the body 
+    you can do it by using margin or padding but it is best to use padding rather than margin 
+    -->
+
+    <div style="
+        background-color: black;
+        color:white;
+        position: fixed;
+        top:0;
+        left:0;
+        right:0;
+        height:50px;
+        z-index: 1;
+    "> header</div>
+
+    <!--    
+    if we also use height and width it will not resize with page, whereas if we only use top, left, etc. it will resize as the page resize...
+
+    in above example we use height instead of bottom 
+    and in below e.g. we used width instead of right 
+
+    hope you understood  
+    and if you didn't 
+    visit this : 
+    https://www.youtube.com/watch?v=G3e-cpL7ofc&t=17077s
+
+    around 5 hour you will understand it 
+    -->
+
+    <div style="
+        background-color: green;
+        color: white;
+        position: fixed;
+        left:0;
+        bottom:0;
+        top:50px;
+        width:70px;
+        ">
+        sidebar
+
+            <div style="
+            position: absolute;
+            background-color: purple;
+            top:0;
+            right:0;
+            ">
+            x
+            </div>
+    </div>
+
+    <div style="
+        position: absolute;
+        background-color: red;
+        top:60px;
+        right:10px
+        ">
+        absolute
+    </div>
+
+    <!-- 
+    difference between position fixed and position absolute is that
+    
+    position fixed : it is placed in the browser window
+    
+    and 
+    
+    position absolute : it is placed in the page -->
+
+
+    <!-- position : absolute in position fixed it gets fixed in that postion 
+    notification numbers in notification icon
+
+    and if it is put inside a relative but it stays relative to that div
+    -->
+    <div style="
+    height: 200px;
+    width: 200px;
+    background-color: lightblue;
+    position: static;
+    ">
+        div 1</div>
+
+    <div style="
+    height: 200px;
+    width: 200px;
+    background-color: lightpink;
+    position: relative;
+    ">div 2
+        <div style="
+        position: absolute;
+        background-color: black;
+        color: white;
+        right:5px;
+        bottom:10px
+        ">
+            5:00
+        </div>
+    </div>
+</body>
+</html>

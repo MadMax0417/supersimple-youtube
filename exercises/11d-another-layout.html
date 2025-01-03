@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>self practice for grid</title>
+    <style>
+        
+        .grid {
+            height: 500px;
+            border: 2px solid red;
+            display: grid;
+            grid-template-columns: 300px 300px 300px;
+             align-items: center;
+             justify-content: center;
+             column-gap:10px;
+        }
+
+        .container {
+            height: 400px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border: 1px solid grey;
+            display: grid;
+            grid-template-rows: 60% 1fr;
+
+        }
+       
+        .thumbnail img {
+            object-fit: cover;
+            object-position: center;
+            width: 100%;
+            height: 100%;
+        }
+
+
+        .middle-div {
+            display: grid;
+            grid-template-rows: 50px 50px;
+
+        }
+
+        .middle-div p{
+            margin: 0;
+
+        }
+        .profile {
+            background-color: red;
+        }
+        .profile-pic {
+            border-radius:50%;
+
+        }
+
+        .info {
+            display: grid;
+            grid-template-rows: 35px 50px 35px;
+        }
+
+        
+
+       
+
+
+
+    </style>
+</head>
+<body>
+    <div class="grid">
+
+        <div class="container">
+
+            <div class="thumbnail">
+
+                <img src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="cat-dp">
+
+            </div>
+
+            <div class="info">
+
+                <p class="User">
+                    Oliver
+                </p>
+
+                <div class="middle-div">
+
+                    <div class="profile">
+
+                        <!-- <img src="https://images.pexels.com/photos/2681751/pexels-photo-2681751.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" class="profile-pic"> -->
+
+                    </div>
+                    
+                    <p class="grey-bg" style="background-color: lightblue;">
+                        2 mutual friends
+                    </p>
+
+                </div>
+
+                <!-- <button class="blue-btn">
+                    Add Friend
+                </button> -->
+            </div>
+
+        </div>
+
+       
+
+
+        <div class="container">
+
+            <div class="thumbnail">
+
+                <img src="https://images.pexels.com/photos/7516789/pexels-photo-7516789.jpeg?auto=compress&cs=tinysrgb&w=800" alt="">
+            </div>
+
+            <div class="info">
+
+                <p class="User">
+                    Oliver
+                </p>
+
+                <div class="middle-div">
+
+                    <img src="" alt="">
+
+                    <p class="grey-bg">
+                        2 mutual friends
+                    </p>
+
+                </div>
+
+                <button class="blue-btn">
+                    Add Friend
+                </button>
+            </div>
+
+        </div>
+        
+        
+        <div class="container">
+
+            <div class="thumbnail">
+
+                <img src="https://images.pexels.com/photos/825947/pexels-photo-825947.jpeg?auto=compress&cs=tinysrgb&w=400" alt="">
+            </div>
+
+            <div class="info">
+
+                <p class="User">
+                    Oliver
+                </p>
+
+                <div class="middle-div">
+
+                    <img src="" alt="">
+
+                    <p class="grey-bg">
+                        2 mutual friends
+                    </p>
+
+                </div>
+
+                <button class="blue-btn">
+                    Add Friend
+                </button>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>

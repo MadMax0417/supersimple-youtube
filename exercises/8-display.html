@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display : block and inline-block</title>
+    <style>
+        .block {
+            display: block;
+        }
+        
+        .inline-block {
+            display: inline-block;
+        }
+
+        input.block {
+            margin: 5px;
+            padding :3px 10px;
+        }
+
+        p.customer-support {
+            font-size: 20px;
+            vertical-align: middle;
+            width: 250px;
+        }
+
+        button.customer-support {
+            font-size: 20px;
+            vertical-align: middle;
+
+        }
+
+        div.google {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            /* justify-content: center; */
+            align-items: center;
+        }
+
+        img.google-logo {
+            width: 280px;
+            
+        }
+
+        input.google-search-bar {
+            font-size :18px;
+            border-radius: 10px;
+            border-style: none;
+            box-shadow: 7px 6px 20px 0px rgba(0, 0, 0, 1.5);
+            padding: 10px 200px 10px 5px;
+            width: 300px;
+        }
+
+
+
+    </style>
+</head>
+<body>  
+    <!-- 8a -->
+
+    <input type="text" placeholder="Name" class ="block">
+    <input type="email" placeholder="Email" class="block">
+
+    <!-- 8b -->
+
+    <div class="customer-support">
+
+        
+        <p class="inline-block customer-support">
+            Thanks for chatting with our customer support. Would you like to take our quick survey?
+        </p>
+        
+        <button class="inline-block customer-support">
+            Yes
+        </button>
+
+        <button class="inline-block customer-support">
+            No
+        </button>
+        
+    </div>
+
+    <div class="google">
+
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png" alt="google-logo" class="google-logo block">
+
+        <input type="text" placeholder="Search Google or type a URL" class="google-search-bar">
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gmail | Challenge Exercise</title>
+    
+    <style>
+
+        .inbox {
+            /* border: 1px solid rgb(199, 197, 197); */
+            font-family: Arial;
+            border-radius: 9px;
+            box-shadow: 4px 3px 17px 4px  rgba(1,1,1,0.15);
+            width: 430px;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .category{
+            color: grey;
+            /* background-color: lightblue; */
+            margin: 15px 15px 20px 15px;
+            font-size: 16px;
+        }
+
+        .container {
+            margin: 15px;
+            margin-top: 0;
+            /* margin-right:0; */
+            /* background-color: lightpink; */
+            display: flex;
+            /* justify-content: space-between; */
+            align-items: center;
+        }
+
+        .left {
+            height:50px;
+            width: 50px;
+            /* border: 1px solid red; */
+            margin-right: 2px;
+        }
+
+        .image {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+            border-radius: 25px;
+        }
+
+        .right{
+            /* border: 1px solid red; */
+            margin-left: 5px;
+            align-items: stretch;
+        }
+
+        .title-and-time {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+            /* border:2px solid red; */
+            /* width: 0; */
+        }
+
+        .title {
+            font-weight: bold;
+            font-size: 19px;
+            /* border: 2px solid blue; */
+        }
+
+        .time {
+            /* border: 1px solid purple; */
+            color: grey;
+        }
+
+        .subject{
+            margin-top: 0;
+            font-weight : bold;
+            font-size: 18px;
+            margin-bottom:4px;
+        }
+
+        .email-content{
+            margin-bottom: 15px;
+            color: grey;
+        }
+
+
+    </style>
+</head>
+<body>  
+    <div class="inbox">
+        <div class="category" >
+            ALL INBOXES
+        </div>
+
+
+        <div class="container">
+
+            <div class="left">
+
+                <img class="image" src="data:image/jpeg;base64,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" alt="">
+            </div>
+                
+            <div class="right">
+                <div class="title-and-time">
+
+                    <div class="title">
+                        Chewy Productions
+                    </div>
+
+                    <div class="time">
+                        4:58 PM
+                    </div>
+
+                </div>
+
+                <div class="subject">
+                    Biggest sales of the year
+                </div>
+
+                <div class="email-content">
+                    Hey there! We're writing to tell you about our...
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="container">
+
+            <div class="left">
+
+                <img class="image" src="https://s3-symbol-logo.tradingview.com/best-buy--600.png" alt="">
+            </div>
+                
+            <div class="right">
+                <div class="title-and-time">
+
+                    <div class="title">
+                        Best Buy
+                    </div>
+
+                    <div class="time">
+                        12:32 PM
+                    </div>
+
+                </div>
+
+                <div class="subject">
+                    Your Best Buy eReceipt
+                </div>
+
+                <div class="email-content">
+                    Thank you for shopping at Best Buy, here is...
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="container">
+
+            <div class="left">
+
+                <img class="image" src="https://images.ctfassets.net/y2ske730sjqp/5QQ9SVIdc1tmkqrtFnG9U1/de758bba0f65dcc1c6bc1f31f161003d/BrandAssets_Logos_02-NSymbol.jpg?w=940" alt="">
+            </div>
+                
+            <div class="right">
+                <div class="title-and-time">
+
+                    <div class="title">
+                        Netflix
+                    </div>
+
+                    <div class="time">
+                        9:00 AM
+                    </div>
+
+                </div>
+
+                <div class="subject">
+                    Here's what's coming soon to Netlfix
+                </div>
+
+                <div class="email-content">
+                    Brand new movies and shows, old favorites...
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

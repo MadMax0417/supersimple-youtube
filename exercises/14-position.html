@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Fixed</title>
+    <style>
+
+        body {
+            padding-bottom:3000px;
+
+        }
+        .bottom-right {
+            background-color: black;
+            color:white;
+            position: fixed;
+            bottom:20px;
+            right:20px;
+        }
+
+        .sidebar {
+            background-color: green;
+            color: white;
+            position: fixed;
+            top:0;
+            bottom:0;
+            right:0;
+            width:100px;
+
+        }
+
+        .cover{
+            background-color: black;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+        
+        .overlay{
+            background-color: rgba(0, 0, 0, 0.433);
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .prompt{
+            font-family: Arial;
+            /* border:1px solid red; */
+            width:300px;
+            background-color: white;
+            border-radius: 10px;
+            padding: 15px
+            /* display: flex; */
+            /* flex-direction: column; */
+            
+        }
+
+        .prompt-title {
+            margin-top:2px;
+            margin-bottom:10px;
+            font-size:20px;
+            font-weight: bold;
+        }
+
+        .prompt-content {
+            margin-bottom: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- <div class="bottom-right">
+        bottom-right
+    </div> -->
+
+    <div class="sidebar">
+        right sidebar
+    </div>
+
+
+    <!-- <div class="cover">
+
+    </div> -->
+
+    <div class="overlay">
+
+        <div class="prompt">
+            <div class="prompt-title">
+                Modal Title
+            </div>
+    
+            <div class="prompt-content">
+                This is a modal
+            </div>
+            
+            <button>Close</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+body {
+    font-family: Roboto, Arial;
+    margin: 0;
+    padding-top: 80px;
+    padding-left: 100px;
+    padding-right: 24px;
+    background-color: rgba(248,248, 248);
+  }
+
+  @media (min-width :1501px){
+    body{
+      padding-left: 177px;
+    }
+  }
+
+
+  p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+
+  a{
+    text-decoration: none;
+  }
+
+  a:visited{
+    color: black;
+  }

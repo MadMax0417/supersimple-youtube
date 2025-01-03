@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Exercises - flex </title>
+
+    <style>
+
+        *{
+            font-family: Arial;
+        }
+
+        .flex {
+            display: flex;
+
+        }
+
+        .container {
+            padding: 5px 10px;
+            flex-direction: column;
+            border: 1px solid grey;
+            width: 300px;
+            height: max-content;
+            padding: 2px;
+            border-radius:5px;
+            /* align-items: end; */
+        }
+        
+        .box{
+            margin-top: 10px;
+            margin-bottom: 2px;
+            width: 100%;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        
+        .text{
+            margin-left: 10px;
+            
+        }
+        
+        button {
+            margin-right: 10px;
+            background-color: rgb(22, 130, 238);
+            border-style: none;
+            border-radius: 12px;
+            color: white;
+            padding: 4px 14px;
+        }
+
+
+        .header {
+            /* flex-direction: row; */
+            justify-content: space-between;
+            margin-top: 50px;
+            background-color: rgb(130, 72, 175);
+            color: white;
+            height: 40px;
+            align-items: center;
+        }
+
+        div.home{
+            margin-left: 10px;
+            width: 120px ;
+            
+        }
+        
+        input{
+            flex:1;  
+            border-radius: 10px; 
+            border-style: none;
+            padding: 5px 10px;
+            max-width: 800px;  
+        }
+        
+        div.btn {
+            width:100px;
+            text-align: center;
+            margin-right: 10px;
+            margin-left: 10px;
+            border:1px solid white;
+            padding:5px 3px;   
+        }
+
+        .container2{
+            width:600px;
+            margin: auto;
+            margin-top: 50px;
+            /* background-color: red; */
+        }
+
+        .line {
+        margin-top:20px;
+            width:500px;
+            /* border:2px solid purple; */
+            align-items: center;
+            justify-content: space-between;
+        }
+
+
+        .img{
+            height: 60px;
+            width: 60px;
+            display:flex;
+            
+            
+        }
+        
+        .dp{
+            object-fit: fill;
+            object-position: center;
+            width: 100%;
+            border-radius: 50%;
+            
+        }            
+        
+
+        .middle{
+            /* border:2px solid purple; */
+            margin-left:5px;
+            flex-direction: column;
+            width:350px
+        }
+
+        .name{
+            font-weight:bold;
+            font-size:14px;
+
+        }
+
+        .username {
+            margin-top: 2px;
+            color :grey;
+            font-size: 14px;
+        }
+        
+        .stats {
+            margin-top: 2px;
+            color:grey;
+            font-size: 13px;
+        }
+
+        .blue-btn {
+            font-weight: bold;
+            padding: 7px 13px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="flex container">
+
+        <div class="flex box">
+            <div class="text"> Home </div>
+            <button> 14 </button>
+        </div>
+
+        <div class="flex  box">
+            <div class="text"> Notifications </div>
+            <button>  3</button>
+        </div>
+
+        <div class="flex box">              
+            <div class="text"> Messages </div>
+            <button> 5 </button>
+        </div>
+
+        
+    </div>
+
+    <div class="header flex">
+        <div class="home">Home</div>
+        <input type="search" placeholder="Search">
+        <div class="btn"> Download</div>
+    </div>
+
+
+    <div class="container2 ">
+
+        <div class="flex line">
+
+            <div class="img left">
+
+                <img src="https://images.pexels.com/photos/57416/cat-sweet-kitty-animals-57416.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" class="dp">
+            </div>
+
+                <div class="middle">
+                    <div class="name">
+                            Oliver
+                        </div>
+        
+                    <div class="username">
+                            the cat
+                    </div>
+        
+                    <div class="stats">
+                            Popular
+                    </div>
+        
+                </div>
+                <button class="blue-btn right">
+                    Follow
+                </button>
+        </div>
+        
+
+        <div class="flex line">
+
+            <div class="img left">
+
+                <img src="https://images.pexels.com/photos/1560424/pexels-photo-1560424.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" class="dp">
+            </div>
+
+                <div class="middle">
+                    <div class="name">
+                            Mimi
+                        </div>
+        
+                    <div class="username">
+                            sleepy cat
+                    </div>
+        
+                    <div class="stats">
+                            Popular
+                    </div>
+        
+                </div>
+                <button class="blue-btn right">
+                    Follow
+                </button>
+        </div>
+        
+
+        <div class="flex line">
+
+            <div class="img left">
+
+                <img src="https://images.pexels.com/photos/776078/pexels-photo-776078.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" class="dp">
+            </div>
+
+                <div class="middle">
+                    <div class="name">
+                            Rex
+                        </div>
+        
+                    <div class="username">
+                            Happy Bulldog
+                    </div>
+        
+                    <div class="stats">
+                            Popular
+                    </div>
+        
+                </div>
+                <button class="blue-btn right">
+                    Follow
+                </button>
+        </div>
+        
+            
+
+     </div>
+    
+            
+    
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Exercises</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+
+        div.container {
+            background-color: white;
+            height: 100px;
+            width: 350px;
+            position: relative;
+        }
+        .x{
+            background-color: black;
+            border-radius:50%;
+            /* padding-top: 5px; */
+            /* padding-bottom: 0; */
+            height: 30px;
+            width: 30px;
+            text-align: center;
+            vertical-align:middle;
+            position: absolute;
+            right: 5px;
+            top:10px;
+        }
+
+        .x p{
+            padding: 0;
+            margin: 0;
+            height: 100%;
+            width: 100%;
+            font-size: 22px;
+            font-family: Arial;
+            font-weight: 100;
+        }
+
+
+        div.chatbox{
+            width: 320px;
+            height: 180px;
+            background-color: grey;
+            position: fixed;
+            bottom: 20px;
+            right:20px
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="x">
+            <p>x</p>
+        </div>
+    </div>
+
+    <div class="chatbox">
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Sidebar</title>
+    <style>
+
+         body{
+            padding-top: 100px;
+            padding-left: 260px;
+         }
+
+        .sidebar{
+            font-family: Arial;
+            display: flex;
+            position: fixed;
+            top:56px;
+            left:0;
+            bottom:0;
+            color: white;
+            /* font-weight: bold; */
+
+        }
+
+        .profiles{
+            padding-top: 20px;
+            background-color: rgb(40, 39, 39);
+            width: 80px;
+        }
+
+        .dp{
+            /* margin-top: 10px; */
+            height: 50px;
+            width: 50px;
+            margin-bottom: 10px;
+        }
+
+        .dp img{
+            margin: 5px 10px;
+            /* padding-bottom: 5px; */
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+        }
+
+        .features{
+            background-color: rgb(73, 72, 72);
+            width: 180px;
+        }
+
+        .features-heading{
+            display: flex;
+            margin: 10px;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 16px;
+            /* border: 1px solid purple; */
+            
+        }
+
+        .plus{
+            cursor: pointer;
+        }
+        
+        .features-heading span{
+            color:darkgray;
+            font-size: 32px;
+            /* border: 1px solid red; */
+        }
+        
+        .features p{
+            margin: 12px;
+        }
+        
+        .features p span{
+            cursor: pointer;
+            font-size: 18px;
+            color:darkgray;
+
+        }
+
+        .hash{
+            padding-right: 5px;
+        }
+
+        
+        .friend-request {
+            padding-left: 70px;
+            padding-right: 70px;
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top:0;
+            left: 0;
+            right: 0;
+            height: 55px;
+            box-shadow: 5px 2px 0px 0px rgb(118 117 116 / 41%);
+            /* border:1px solid grey; */
+
+        }
+
+        .profile-info{
+            display: flex;
+            gap: 8px;
+
+        }
+
+        .fr-dp {
+            /* background-color: aqua; */
+            height:45px;
+            width:45px;
+        }
+        
+        .fr-dp-img {
+            width:100%;
+            height:100%;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        button {
+            cursor: pointer;
+            border: none;
+            padding: 7px 10px;
+            border-radius: 7px;
+            font-weight: bold;
+            margin-right:5px;
+            font-size: 12px;
+        }
+
+
+        .blue-btn {
+            background-color: rgb(57, 143, 228);
+            color:white;
+
+        }
+
+        .grey-btn{
+            background-color: rgb(232, 232, 232);
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="profiles">
+
+            <div class="dp">
+                <img src="https://www.stylecraze.com/wp-content/uploads/2013/06/Different-Beautiful-American-Girls.jpg" alt="">
+            </div>
+
+
+            <div class="dp">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/026/829/465/small_2x/beautiful-girl-with-autumn-leaves-photo.jpg" alt="">
+            </div>
+
+
+            <div class="dp">
+                <img src="https://static.vecteezy.com/system/resources/previews/030/798/360/non_2x/beautiful-asian-girl-wearing-over-size-hoodie-in-casual-style-ai-generative-photo.jpg" alt="">
+            </div>
+
+        </div>
+        
+        <div class="features">
+            <div class="features-heading"> 
+                <div>INFO</div>
+                <span class="plus"> &#x2b; </span>
+            </div>
+            <p>
+                <span class="hash">#</span>
+                <span>new-videos</span>
+            </p>
+            <p>
+                <span class="hash">#</span>
+                <span>updates</span>
+            </p>
+            <p>
+                <span class="hash">#</span>
+                <span>faq</span>
+            </p>
+
+        </div>
+    </div>
+
+    <div class="friend-request">
+        <div class="profile-info">
+            <div class="fr-dp">
+                <img class="fr-dp-img " src="data:image/jpeg;base64,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" alt="">
+            </div>
+
+            <p class="user-name">Olivia Fernandes</p>
+        </div>
+
+        <div class="buttons">
+            <button class="blue-btn">Add Friend</button>
+            <button class="grey-btn">Message</button>
+        </div>
+    </div>
+</body>
+</html>

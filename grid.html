@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Grid Practice </title>
+    </head>
+    <body style="padding-bottom:1000px ;">
+        <div style="
+            display: grid;
+            grid-template-columns: 100px 100px; 
+            column-gap: 5px;
+            
+            ">
+            <!-- how wide our grid will be 2 columns of 100pxs -->
+            <div style="background-color: lightblue;">div 1</div>
+            <!-- this is called inline style -->
+             <!-- we don't use that in real website -->
+              <!-- grid maintains alignment much better -->
+            <div style="background-color: lightpink;">div 2 <p>text  
+            </p></div>
+
+        </div>
+
+        <div style="
+            display: grid;
+            grid-template-columns: 100px 100px 200px; 
+            margin-top: 20px;
+            column-gap: 5px;     
+            ">
+        
+            <div style="background-color: lightblue;">100px</div>
+           
+            <div style="background-color: lightpink;">100px <p>text  
+            </p></div>
+            <div style="background-color: lightgreen;">200px</div>
+            <div style="background-color: lightgray;">100px</div>
+            
+        </div>
+
+        <div style="
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: 100px 1fr;
+
+        ">
+
+        <div style="background-color: rgb(227, 99, 99);">100px</div>
+        <div style="background-color: rgb(242, 101, 242);">1fr</div>
+
+        </div>
+
+        <div style="
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: 100px 1fr 2fr;
+
+        ">
+
+        <!-- fr = fractional unit  -->
+
+        <div style="background-color: rgb(227, 99, 99);">100px</div>
+        <div style="background-color: rgb(242, 101, 242);">1fr</div>
+        <div style="background-color: rgb(193, 240, 91);">2fr</div>
+
+        </div>
+
+        <div style="
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 20px;
+            row-gap: 40px;
+            
+        " >
+        <div style="background-color: rgb(227, 99, 99); height:200px;">1fr</div>
+        <div style="background-color: rgb(242, 101, 242); height:200px;">1fr</div>
+        <div style="background-color: rgb(193, 240, 91); height:200px;">1fr</div>
+        <div style="background-color: rgb(242, 101, 242); height:200px;">1fr</div>
+        <div style="background-color: rgb(193, 240, 91); height:200px;">1fr</div>
+        <div style="background-color: rgb(242, 101, 242); height:200px;">1fr</div>
+        
+        </div>
+
+
+
+    </body>
+</html>

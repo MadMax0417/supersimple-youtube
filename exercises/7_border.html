@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        input:focus {
+            outline: none;
+        }
+
+        button {
+            cursor: pointer;
+            transition: opacity 0.15s;
+        }
+
+        button:hover {
+            opacity : 0.9;
+        }
+        .search {
+            font-size: 17px;
+            border: 1px solid grey;
+            border-radius: 7px;
+            padding: 7px;
+            padding-left : 12px;
+        }
+
+        .google-search {
+            margin-left: 50px;
+            border-radius: 18px;
+            border-style: none;
+            padding: 10px;
+            width: 400px;
+            box-shadow: 0px 3px 7px rgba(0, 0, 0, 1.5);
+        }
+        
+        
+        .linkedin {
+        margin-top: 50px;
+        font-family : Arial;
+    }
+    .small-linkedin {
+        color: rgb(88, 87, 87);
+        font-size: 15px;
+        /* font-weight: bold; */
+    }
+
+    p.small-linkedin {
+        margin-bottom: 5px;
+    }
+
+    button.blue-btn {
+        font-size:18px;
+        margin-top: 10px;
+        width:350px;
+        background-color: rgb(46, 90, 237);
+        color: white;
+        border-style: none;
+        border-radius: 22px;
+        padding: 15px 14px;
+    }
+
+    
+
+    input.search-linkedin {
+        /* margin-top: 2px; */
+        width: 350px;
+        padding: 7px;
+        border: 2px solid rgb(49, 48, 48) ;
+        /* border-color: rgb(49, 48, 48); */
+        border-radius: 5px;
+
+    }
+
+    div.twitter {
+        font-family: Arial;
+        margin:0;
+        margin-top: 50px;
+        vertical-align: top;
+        display: flex;
+        align-items: center;
+        /* gap:20px */
+    }
+
+    img.twitter-dp {
+        border-radius:50% ;
+        margin: 10px;
+        height: 50px;
+        margin-right:0px;
+
+    }
+
+    input.twitter-tweet {
+        font-size: 18px;
+        padding: 10px 50px 10px 10px;
+        border-style: none;
+        margin-right: 20px;
+    }
+
+
+    button.twitter-btn {
+        background-color: rgb(40, 162, 237);
+        border-style: none;
+        color:white;
+        border-radius: 30px;
+        padding: 8px 20px;
+        font-size: 16px;
+    }
+
+    
+    </style>
+</head>
+<body>
+    <!-- 7d -->
+     <input type="text" placeholder= "Search" class="search">
+
+     <!-- 7e -->
+      <input type="text" placeholder= "Search Google or type a URL" class="google-search">
+
+      <!-- 7f linkedin Signup -->
+    <div class="linkedin">
+        <p class="small-linkedin">
+            Email
+        </p>
+        
+        <input type="text" class="search-linkedin" >
+
+        <p class="small-linkedin">
+            By clicking Agree & Join, you agree to the Privacy Policy
+        </p>
+
+        <button class="blue-btn">
+            Agree & Join
+        </button>
+
+    </div>
+
+    <!-- 7g twitter text box -->
+
+    <div class="twitter">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7SbBEHVk6wy4NSglA56qFP3o10W13PhjfA-lLyhx2vRlhFjly10_19bDO3pCGmLe3MuY&usqp=CAU" alt="user profile picture" class="twitter-dp">
+
+        <input type="text" class="twitter-tweet" placeholder="What's happening?">
+
+        <button class="twitter-btn"> 
+            Tweet
+        </button>
+    </div>
+
+    
+</body>
+</html>
